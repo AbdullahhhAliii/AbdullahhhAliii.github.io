@@ -1,51 +1,76 @@
-/* Basic Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
+/* ---------- Basic page styles ---------- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{font-family:Inter,Arial,sans-serif;background:#f4f6f9;color:#111}
+.container{max-width:980px;margin:0 auto;padding:22px}
+
+/* ---------- Header / Navbar ---------- */
+.site-header{
+  background:#0b1223;            /* dark background for header */
+  color:#fff;
+  position:sticky;
+  top:0;
+  z-index:40;
+  box-shadow:0 6px 18px rgba(2,6,23,0.12);
+}
+.header-inner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  padding:12px 18px;
+  max-width:980px;
+  margin:0 auto;
+}
+.brand{
+  color:#fff;
+  text-decoration:none;
+  font-weight:800;
+  font-size:1.05rem;
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+.brand .logo {
+  width:36px;
+  height:36px;
+  border-radius:50%;
+  object-fit:cover;
+  border:2px solid rgba(255,255,255,0.12);
+  background:#1b2430;
 }
 
-body {
-  background: #f4f6f9;
-  color: #333;
-  line-height: 1.6;
-  padding: 20px;
+/* nav links (buttons) */
+.nav{display:flex;gap:8px;align-items:center}
+.nav a{
+  color:rgba(255,255,255,0.88);
+  text-decoration:none;
+  padding:8px 12px;
+  border-radius:10px;
+  font-weight:600;
+  transition:all .18s ease;
+  font-size:0.95rem;
+}
+.nav a:hover{
+  background:rgba(255,255,255,0.06);
+  transform:translateY(-2px);
+}
+.nav a.active{
+  background:#22c55e;         /* green active color */
+  color:#062014;
+  box-shadow:0 6px 18px rgba(34,197,94,0.12);
 }
 
-header {
-  text-align: center;
-  margin-bottom: 30px;
-}
+/* ---------- Page content cards ---------- */
+h1{color:#0b1223;margin:18px 0 12px}
+.card{background:#fff;border-radius:12px;padding:18px;margin:18px 0;box-shadow:0 8px 30px rgba(8,12,20,0.04);border:1px solid #eef1f6}
+.card h2{color:#0b66d0;margin-bottom:10px}
+.link-btn{display:inline-block;background:#0b66d0;color:#fff;padding:8px 12px;border-radius:8px;text-decoration:none;font-weight:700}
 
-header h1 {
-  font-size: 2.5rem;
-  color: #0077cc;
-}
-
-header p {
-  font-size: 1.2rem;
-  color: #555;
-}
-
-section {
-  background: #fff;
-  padding: 20px;
-  margin-bottom: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-}
-
-section h2 {
-  color: #0077cc;
-  margin-bottom: 10px;
-}
-
-ul {
-  list-style: none;
-  padding-left: 10px;
-}
-
-li {
-  margin: 8px 0;
+/* small responsive tweaks */
+@media (max-width:720px){
+  .header-inner{flex-direction:column;align-items:flex-start;gap:8px}
+  .nav{width:100%;display:flex;flex-wrap:wrap}
+  .brand{font-size:1rem}
+  .nav a{padding:8px 10px;font-size:0.92rem}
 }
