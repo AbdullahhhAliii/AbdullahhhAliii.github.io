@@ -10,30 +10,31 @@ body {
 
 /* Navigation bar */
 nav {
-  position: fixed;
+  position: fixed; /* stays at top */
   top: 0;
   width: 100%;
-  background: #6200ea; /* slightly lighter purple */
+  background: #ffffff; /* white navbar */
   padding: 15px;
   z-index: 1000;
   text-align: center;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 nav a {
-  color: white;
+  color: #6200ea; /* bright purple text */
   margin: 0 15px;
   text-decoration: none;
   font-weight: bold;
   padding: 10px 20px;
   border-radius: 8px;
-  background-color: #03dac6; /* vibrant teal button */
+  background-color: #bb86fc; /* light purple button */
   transition: all 0.3s ease;
 }
 
 nav a:hover {
-  background-color: #018786; /* darker teal on hover */
-  transform: scale(1.05); /* subtle zoom effect */
+  background-color: #6200ea; /* darker purple on hover */
+  color: white; /* text turns white on hover */
+  transform: scale(1.05); /* subtle zoom */
 }
 
 /* Smooth scrolling */
@@ -43,7 +44,7 @@ html {
 
 /* Headings */
 h1 {
-  color: #ffffff; /* white on hero */
+  color: #ffffff; /* white text for Home section */
   font-size: 3rem;
   margin-bottom: 20px;
 }
@@ -56,20 +57,23 @@ h2 {
 
 /* Sections */
 section {
-  min-height: 100vh;
+  min-height: 100vh; /* full screen height */
   margin: 40px 20px;
-  padding: 100px 20px 20px 20px; /* extra top padding for navbar */
+  padding: 120px 20px 20px 20px; /* top padding avoids navbar overlap */
   background: #ffffff;
   border-radius: 15px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
-/* Hero Section (Home) */
+/* Home Section */
 #home {
-  background: linear-gradient(135deg, #6a11cb, #2575fc); /* gradient still there but lighter shades */
+  background: linear-gradient(135deg, #6a11cb, #2575fc); /* bright gradient */
   color: white;
-  padding: 120px 20px 40px 20px;
+  padding: 140px 20px 40px 20px;
   border-radius: 15px;
 }
 
-#hom
+#home p {
+  font-size: 1.3rem;
+  margin: 10px 0;
+}
