@@ -3,24 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gaming | Abdullah</title>
+  <title>Abdullah's Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="index.html">👋 Abdullah</a>
-      <nav class="nav">
-        <a href="index.html">Home</a>
-        <a href="gaming.html" class="active">Gaming</a>
-        <a href="editing.html">Editing</a>
-      </nav>
-    </div>
-  </header>
 
-  <main class="container">
-    <h1>🎮 My Gaming Journey</h1>
-    <p>I’m passionate about competitive gaming and esports. Here I will share my gaming clips, achievements, and experiences.</p>
-  </main>
+  <!-- Navigation Bar -->
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#gaming">Gaming</a>
+    <a href="#editing">Editing</a>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home">
+    <h1>👋 Hi, I'm Abdullah</h1>
+    <p>🎓 B.Tech Student at NIAT (Delhi Campus)</p>
+    <p>💻 Learning Web Development & Python for AI/ML</p>
+    <p>🤖 Exploring Generative AI and creative projects</p>
+  </section>
+
+  <!-- Gaming Section -->
+  <section id="gaming">
+    <h2>🎮 Gaming Page</h2>
+    <p>I run an Instagram page about esports and competitive gaming. I share updates, gameplay, and insights about the esports world.</p>
+  </section>
+
+  <!-- Editing Section -->
+  <section id="editing">
+    <h2>🎬 Editing Skills</h2>
+    <p>I create video edits and cinematography content using tools like After Effects and Premiere Pro. I love storytelling through visuals.</p>
+  </section>
+
 </body>
 </html>
