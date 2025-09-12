@@ -3,17 +3,17 @@ body {
   font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
-  background: #f4f4f9; /* light background for all sections */
+  background: #f4f4f9;
   color: #333;
   text-align: center;
 }
 
 /* Navigation bar */
 nav {
-  position: fixed; /* stays at top */
+  position: fixed;
   top: 0;
   width: 100%;
-  background: #ffffff; /* white navbar */
+  background: rgba(255,255,255,0.9); /* slightly transparent to blend with top */
   padding: 15px;
   z-index: 1000;
   text-align: center;
@@ -21,20 +21,20 @@ nav {
 }
 
 nav a {
-  color: #6200ea; /* bright purple text */
+  color: #6200ea; 
   margin: 0 15px;
   text-decoration: none;
   font-weight: bold;
   padding: 10px 20px;
   border-radius: 8px;
-  background-color: #bb86fc; /* light purple button */
+  background-color: #bb86fc; 
   transition: all 0.3s ease;
 }
 
 nav a:hover {
-  background-color: #6200ea; /* darker purple on hover */
-  color: white; /* text turns white on hover */
-  transform: scale(1.05); /* subtle zoom */
+  background-color: #6200ea;
+  color: white;
+  transform: scale(1.05);
 }
 
 /* Smooth scrolling */
@@ -44,36 +44,38 @@ html {
 
 /* Headings */
 h1 {
-  color: #ffffff; /* white text for Home section */
-  font-size: 3rem;
-  margin-bottom: 20px;
+  color: #ffffff;
+  font-size: 2.8rem;
+  margin-bottom: 15px;
 }
 
 h2 {
-  color: #6200ea; /* purple headings for sections */
+  color: #6200ea;
   font-size: 2rem;
   margin-bottom: 15px;
 }
 
-/* Sections */
-section {
-  min-height: 100vh; /* full screen height */
-  margin: 40px 20px;
-  padding: 120px 20px 20px 20px; /* top padding avoids navbar overlap */
-  background: #ffffff;
-  border-radius: 15px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-}
-
 /* Home Section */
 #home {
-  background: linear-gradient(135deg, #6a11cb, #2575fc); /* bright gradient */
+  background: linear-gradient(135deg, #8e2de2, #4a00e0); /* lighter purple gradient */
   color: white;
-  padding: 140px 20px 40px 20px;
-  border-radius: 15px;
+  padding: 80px 20px; /* shorter than 100vh so it doesn’t feel too long */
+  border-radius: 0 0 30px 30px; /* rounded bottom corners */
+  margin-top: 60px; /* space for navbar */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 #home p {
-  font-size: 1.3rem;
-  margin: 10px 0;
+  font-size: 1.2rem;
+  margin: 8px 0;
+}
+
+/* Sections (Gaming & Editing) */
+section {
+  min-height: auto; /* not full screen anymore */
+  margin: 40px 20px;
+  padding: 40px 20px;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
 }
