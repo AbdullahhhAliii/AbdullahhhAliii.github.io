@@ -4,9 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Abdullah | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
   <!-- AOS CSS (for scroll animations) -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -26,7 +32,7 @@
   <section id="home" class="hero">
     <div class="hero-content" data-aos="fade-up">
       <h1>Hi, I'm Abdullah 👋</h1>
-      <p class="subtitle"><span id="typed"></span></p>
+      <p class="subtitle">Web Developer | AI/ML Enthusiast | Gamer | Video Editor</p>
       <a href="#projects" class="btn">See My Work</a>
       <a href="#contact" class="btn btn-outline">Contact Me</a>
     </div>
@@ -37,31 +43,67 @@
     <h2>About Me</h2>
     <p>
       I'm Abdullah, an 18-year-old 1st year B.Tech student at NIAT (Delhi Campus).  
-      Passionate about Web Development, Gaming, Video Editing, and AI/ML.  
-      Currently building my skills step by step, aiming for my first internship in 6 months.
+      Passionate about Web Development, AI/ML, Gaming, and Video Editing.  
+      Currently building my skills step by step, aiming for my first internship within 6 months.
     </p>
   </section>
 
   <!-- Skills Section -->
   <section id="skills" data-aos="fade-up">
     <h2>Skills</h2>
-    <ul class="skills-list">
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JavaScript</li>
-      <li>Python</li>
-      <li>Video Editing</li>
-      <li>Gaming</li>
-    </ul>
+    <div class="skills-container">
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">Python</div>
+      <div class="skill">Video Editing</div>
+      <div class="skill">Gaming</div>
+    </div>
   </section>
 
   <!-- Projects Section -->
   <section id="projects" data-aos="fade-up">
     <h2>Projects</h2>
-    <div class="projects">
-      <div class="card">
+    <div class="projects-container">
+      <div class="project-card">
         <h3>🎮 Gaming Page</h3>
         <p>I run an Instagram page for esports and gaming updates.</p>
       </div>
-      <div class="card">
-        <h3>🎬 Editing
+      <div class="project-card">
+        <h3>🎬 Video Editing</h3>
+        <p>Creating cool edits for YouTube and Instagram content.</p>
+      </div>
+      <div class="project-card">
+        <h3>💻 Web Dev</h3>
+        <p>Portfolio websites and mini projects using HTML, CSS, and JS.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" data-aos="fade-up">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Abdullah. All rights reserved.</p>
+  </footer>
+
+  <!-- AOS JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+  <!-- Typed.js for text animation -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+
+</body>
+</html>
