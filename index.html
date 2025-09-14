@@ -4,10 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Abdullah | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- AOS CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+  <!-- Navbar -->
   <nav>
     <div class="logo">Abdullah</div>
     <ul class="nav-links">
@@ -19,6 +28,7 @@
     </ul>
   </nav>
 
+  <!-- Hero Section -->
   <section id="home" class="hero">
     <div class="hero-content" data-aos="fade-up">
       <h1>Hi, I'm Abdullah 👋</h1>
@@ -28,48 +38,88 @@
     </div>
   </section>
 
+  <!-- About Section -->
   <section id="about" data-aos="fade-up">
     <h2>About Me</h2>
     <p>
-      I'm Abdullah, an 18-year-old 1st year B.Tech student at NIAT (Delhi Campus). Passionate about Web Development, Gaming, Video Editing, and AI/ML. Currently building my skills step by step, aiming for my first internship in 6 months.
+      I'm Abdullah, an 18-year-old 1st year B.Tech student at NIAT (Delhi Campus).  
+      Passionate about Web Development, AI/ML, Gaming, and Video Editing.  
+      Currently building my skills step by step, aiming for my first internship in 6 months.
     </p>
   </section>
 
+  <!-- Skills Section -->
   <section id="skills" data-aos="fade-up">
     <h2>Skills</h2>
-    <ul class="skills-list">
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JavaScript</li>
-      <li>Python</li>
-      <li>Video Editing</li>
-      <li>Gaming</li>
-    </ul>
-  </section>
-
-  <section id="projects" data-aos="fade-up">
-    <h2>Projects</h2>
-    <div class="projects">
-      <div class="card">
-        <h3>🎮 Gaming Page</h3>
-        <p>I run an Instagram page for esports and gaming updates.</p>
+    <div class="skills-container">
+      <div class="skill">
+        <img src="assets/images/html.png" alt="HTML">
+        <p>HTML</p>
       </div>
-      <div class="card">
-        <h3>🎬 Editing Portfolio</h3>
-        <p>Showcasing my video editing skills and projects.</p>
+      <div class="skill">
+        <img src="assets/images/css.png" alt="CSS">
+        <p>CSS</p>
+      </div>
+      <div class="skill">
+        <img src="assets/images/js.png" alt="JavaScript">
+        <p>JavaScript</p>
+      </div>
+      <div class="skill">
+        <img src="assets/images/python.png" alt="Python">
+        <p>Python</p>
+      </div>
+      <div class="skill">
+        <img src="assets/images/editing.png" alt="Editing">
+        <p>Video Editing</p>
+      </div>
+      <div class="skill">
+        <img src="assets/images/gaming.png" alt="Gaming">
+        <p>Gaming</p>
       </div>
     </div>
   </section>
 
-  <section id="contact" data-aos="fade-up">
-    <h2>Contact</h2>
-    <p>Feel free to reach out to me via email at <a href="mailto:abdullah@example.com">abdullah@example.com</a>.</p>
+  <!-- Projects Section -->
+  <section id="projects" data-aos="fade-up">
+    <h2>Projects</h2>
+    <div class="projects-container">
+      <div class="project-card">
+        <h3>🎮 Gaming Page</h3>
+        <p>I run an Instagram page for esports and gaming updates.</p>
+      </div>
+      <div class="project-card">
+        <h3>🎬 Video Editing</h3>
+        <p>Creating content edits for YouTube & Instagram.</p>
+      </div>
+      <div class="project-card">
+        <h3>💻 Web Development</h3>
+        <p>Portfolio websites & mini projects using HTML, CSS, JS.</p>
+      </div>
+    </div>
   </section>
 
+  <!-- Contact Section -->
+  <section id="contact" data-aos="fade-up">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Abdullah. All rights reserved.</p>
+    <p>© 2025 Abdullah. All rights reserved.</p>
   </footer>
 
+  <!-- JS Libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  
+  <!-- Custom JS -->
   <script src="script.js"></script>
+
 </body>
 </html>
