@@ -4,36 +4,81 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Abdullah's Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Navigation Bar -->
+  <!-- Navbar -->
   <nav>
-    <a href="#home">Home</a>
-    <a href="#gaming">Gaming</a>
-    <a href="#editing">Editing</a>
+    <div class="logo">Abdullah</div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
   </nav>
 
-  <!-- Home Section -->
-  <section id="home">
-    <h1>👋 Hi, I'm Abdullah</h1>
-    <p>🎓 B.Tech Student at NIAT (Delhi Campus)</p>
-    <p>💻 Learning Web Development & Python for AI/ML</p>
-    <p>🤖 Exploring Generative AI and creative projects</p>
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <h1>Hi, I'm <span>Abdullah</span></h1>
+    <p>B.Tech Student at NIAT | Web Developer | AI/ML Learner</p>
+    <a href="#contact" class="btn">Contact Me</a>
   </section>
 
-  <!-- Gaming Section -->
-  <section id="gaming">
-    <h2>🎮 Gaming Page</h2>
-    <p>I run an Instagram page about esports and competitive gaming. I share updates, gameplay, and insights about the esports world.</p>
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I'm Abdullah, an 18-year-old 1st year B.Tech student at NIAT (Delhi Campus).  
+      Passionate about Web Development, Gaming, Video Editing, and AI/ML.  
+      Currently building skills step by step, aiming for my first internship in 6 months.
+    </p>
   </section>
 
-  <!-- Editing Section -->
-  <section id="editing">
-    <h2>🎬 Editing Skills</h2>
-    <p>I create video edits and cinematography content using tools like After Effects and Premiere Pro. I love storytelling through visuals.</p>
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">Python</div>
+      <div class="skill">Video Editing</div>
+      <div class="skill">Gaming</div>
+    </div>
   </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-card">
+      <h3>🎮 Gaming Page</h3>
+      <p>I run an Instagram page for esports and gaming updates.</p>
+    </div>
+    <div class="project-card">
+      <h3>🎬 Editing</h3>
+      <p>I create cinematic edits and storytelling videos using Premiere Pro & After Effects.</p>
+    </div>
+    <div class="project-card">
+      <h3>🌐 Portfolio Website</h3>
+      <p>This website — my first step into web development!</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Let’s connect! Reach out via email or LinkedIn.</p>
+    <a href="mailto:your-email@example.com" class="btn">Email Me</a>
+    <a href="https://linkedin.com/in/your-profile" class="btn">LinkedIn</a>
+  </section>
+
+  <footer>
+    <p>© 2025 Abdullah | Built with ❤️ at NIAT</p>
+  </footer>
 
 </body>
 </html>
