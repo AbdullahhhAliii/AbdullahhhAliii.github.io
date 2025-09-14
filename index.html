@@ -6,13 +6,17 @@
   <title>Abdullah's Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+
+  <!-- Icons & Animations -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 </head>
 <body>
 
   <!-- Navbar -->
   <nav>
     <div class="logo">Abdullah</div>
-    <ul>
+    <ul class="nav-links">
       <li><a href="#home">Home</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
@@ -22,37 +26,42 @@
   </nav>
 
   <!-- Hero Section -->
-  <section id="home" class="hero">
-    <h1>Hi, I'm <span>Abdullah</span></h1>
-    <p>B.Tech Student at NIAT | Web Developer | AI/ML Learner</p>
-    <a href="#contact" class="btn">Contact Me</a>
-  </section>
+  <header id="home" class="hero">
+    <div class="hero-inner" data-aos="fade-up">
+      <h1>Hi, I'm <span>Abdullah</span></h1>
+      <p class="subtitle"><span id="typed"></span></p>
+      <div class="hero-cta">
+        <a class="btn" href="#projects">See Projects</a>
+        <a class="btn btn-outline" href="#contact">Contact</a>
+      </div>
+    </div>
+  </header>
 
-  <!-- About Section -->
-  <section id="about">
+  <!-- About -->
+  <section id="about" data-aos="fade-up">
     <h2>About Me</h2>
     <p>
-      I'm Abdullah, an 18-year-old 1st year B.Tech student at NIAT (Delhi Campus).  
+      I'm Abdullah, 18 years old, 1st year B.Tech student at NIAT (Delhi Campus).  
       Passionate about Web Development, Gaming, Video Editing, and AI/ML.  
       Currently building skills step by step, aiming for my first internship in 6 months.
     </p>
   </section>
 
-  <!-- Skills Section -->
-  <section id="skills">
+  <!-- Skills -->
+  <section id="skills" data-aos="zoom-in">
     <h2>Skills</h2>
     <div class="skills-grid">
-      <div class="skill">HTML</div>
-      <div class="skill">CSS</div>
-      <div class="skill">JavaScript</div>
-      <div class="skill">Python</div>
-      <div class="skill">Video Editing</div>
-      <div class="skill">Gaming</div>
+      <div class="skill"><i class="fa-brands fa-html5"></i> HTML</div>
+      <div class="skill"><i class="fa-brands fa-css3-alt"></i> CSS</div>
+      <div class="skill"><i class="fa-brands fa-js"></i> JavaScript</div>
+      <div class="skill"><i class="fa-brands fa-python"></i> Python</div>
+      <div class="skill"><i class="fa-solid fa-film"></i> Video Editing</div>
+      <div class="skill"><i class="fa-solid fa-gamepad"></i> Gaming</div>
     </div>
   </section>
 
-  <!-- Projects Section -->
-  <section id="projects">
+  <!-- Projects -->
+  <section id="projects" data-aos="fade-up">
     <h2>Projects</h2>
     <div class="project-card">
       <h3>🎮 Gaming Page</h3>
@@ -68,17 +77,34 @@
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Let’s connect! Reach out via email or LinkedIn.</p>
-    <a href="mailto:your-email@example.com" class="btn">Email Me</a>
-    <a href="https://linkedin.com/in/your-profile" class="btn">LinkedIn</a>
+  <!-- GitHub Stats -->
+  <section id="github" data-aos="fade-up">
+    <h2>GitHub Stats</h2>
+    <img src="https://github-readme-stats.vercel.app/api?username=abdullah-codes-bhai&show_icons=true&theme=radical" alt="GitHub stats">
+    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=abdullah-codes-bhai&layout=compact&theme=radical" alt="Top Languages">
   </section>
 
+ <!-- Contact -->
+<section id="contact" data-aos="fade-up">
+  <h2>Contact</h2>
+  <p>Let’s connect! You can reach out to me directly.</p>
+  
+  <a href="mailto:rangerallinstyle@gmail.com" class="btn">📧 Email Me</a>
+  <a href="tel:+919794548495" class="btn btn-outline">📱 Call Me</a>
+
+  <!-- LinkedIn later -->
+  <!-- <a href="https://linkedin.com/in/your-profile" class="btn btn-outline">LinkedIn</a> -->
+</section>
+
+
+  <!-- Footer -->
   <footer>
     <p>© 2025 Abdullah | Built with ❤️ at NIAT</p>
   </footer>
 
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
