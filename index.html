@@ -1,125 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Abdullah | Portfolio</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Abdullah — Portfolio</title>
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-
-  <!-- AOS CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
-
-  <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css">
+  <!-- Google font (optional) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- Navbar -->
-  <nav>
-    <div class="logo">Abdullah</div>
-    <ul class="nav-links">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+  <!-- NAV -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home">Abdullah</a>
+      <nav class="nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-  <!-- Hero Section -->
+  <!-- HERO -->
   <section id="home" class="hero">
-    <div class="hero-content" data-aos="fade-up">
-      <h1>Hi, I'm Abdullah 👋</h1>
-      <p class="subtitle"><span id="typed"></span></p>
-      <a href="#projects" class="btn">See My Work</a>
-      <a href="#contact" class="btn btn-outline">Contact Me</a>
+    <div class="container hero-inner">
+      <h1 class="hero-title">👋 Hi, I'm <span class="name">Abdullah</span></h1>
+      <p class="hero-sub">B.Tech Student at NIAT (Delhi Campus) · Web Dev & Python for AI/ML</p>
+
+      <div class="type-line" aria-hidden="true">
+        <span id="typed"></span><span class="cursor">|</span>
+      </div>
+
+      <div class="cta">
+        <a class="btn primary" href="#projects">See My Work</a>
+        <a class="btn outline" href="#contact">Contact Me</a>
+      </div>
     </div>
   </section>
 
-  <!-- About Section -->
-  <section id="about" data-aos="fade-up">
-    <h2>About Me</h2>
-    <p>
-      I'm Abdullah, an 18-year-old 1st year B.Tech student at NIAT (Delhi Campus).  
-      Passionate about Web Development, AI/ML, Gaming, and Video Editing.  
-      Currently building my skills step by step, aiming for my first internship in 6 months.
+  <!-- ABOUT -->
+  <section id="about" class="section container">
+    <h2 class="section-title">About Me</h2>
+    <p class="lead">
+      I'm Abdullah — an 18-year-old 1st-year B.Tech student at NIAT (Delhi Campus). Passionate about Web
+      Development, AI/ML, and Video Editing. Currently building practical projects and aiming for an internship this year.
     </p>
   </section>
 
-  <!-- Skills Section -->
-  <section id="skills" data-aos="fade-up">
-    <h2>Skills</h2>
-    <div class="skills-container">
-      <div class="skill">
-        <img src="assets/images/html.png" alt="HTML">
-        <p>HTML</p>
-      </div>
-      <div class="skill">
-        <img src="assets/images/css.png" alt="CSS">
-        <p>CSS</p>
-      </div>
-      <div class="skill">
-        <img src="assets/images/js.png" alt="JavaScript">
-        <p>JavaScript</p>
-      </div>
-      <div class="skill">
-        <img src="assets/images/python.png" alt="Python">
-        <p>Python</p>
-      </div>
-      <div class="skill">
-        <img src="assets/images/editing.png" alt="Editing">
-        <p>Video Editing</p>
-      </div>
-      <div class="skill">
-        <img src="assets/images/gaming.png" alt="Gaming">
-        <p>Gaming</p>
-      </div>
+  <!-- SKILLS -->
+  <section id="skills" class="section container">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills-grid">
+      <!-- Simple inline icons so nothing breaks -->
+      <div class="skill"><div class="icon">📄</div><div class="label">HTML</div></div>
+      <div class="skill"><div class="icon">🎨</div><div class="label">CSS</div></div>
+      <div class="skill"><div class="icon">⚙️</div><div class="label">JavaScript</div></div>
+      <div class="skill"><div class="icon">🐍</div><div class="label">Python</div></div>
+      <div class="skill"><div class="icon">🎬</div><div class="label">Video Editing</div></div>
+      <div class="skill"><div class="icon">🕹️</div><div class="label">Gaming</div></div>
     </div>
   </section>
 
-  <!-- Projects Section -->
-  <section id="projects" data-aos="fade-up">
-    <h2>Projects</h2>
-    <div class="projects-container">
-      <div class="project-card">
-        <h3>🎮 Gaming Page</h3>
-        <p>I run an Instagram page for esports and gaming updates.</p>
-      </div>
-      <div class="project-card">
-        <h3>🎬 Video Editing</h3>
-        <p>Creating content edits for YouTube & Instagram.</p>
-      </div>
-      <div class="project-card">
-        <h3>💻 Web Development</h3>
-        <p>Portfolio websites & mini projects using HTML, CSS, JS.</p>
-      </div>
+  <!-- PROJECTS -->
+  <section id="projects" class="section container">
+    <h2 class="section-title">Projects</h2>
+    <div class="projects-grid">
+      <article class="card">
+        <h3>Video Editing</h3>
+        <p>Short cinematic edits & reels for social platforms.</p>
+      </article>
+
+      <article class="card">
+        <h3>Web Development</h3>
+        <p>Portfolio websites and small web apps using HTML, CSS, JS.</p>
+      </article>
+
+      <article class="card">
+        <h3>AI Learning Experiments</h3>
+        <p>Small experiments with Generative AI for learning & prototypes.</p>
+      </article>
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <section id="contact" data-aos="fade-up">
-    <h2>Contact Me</h2>
-    <form>
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
+  <!-- CONTACT -->
+  <section id="contact" class="section container contact-section">
+    <h2 class="section-title">Contact Me</h2>
+
+    <!-- Replace action with your Formspree endpoint: https://formspree.io/f/<your-id> -->
+    <form id="contactForm" class="contact-form" method="POST" action="YOUR_FORMSPREE_ENDPOINT">
+      <input name="name" type="text" placeholder="Your Name" required>
+      <input name="email" type="email" placeholder="Your Email" required>
+      <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+
+      <div class="form-row">
+        <button type="submit" class="btn primary">Send Message</button>
+        <button id="mailtoBtn" type="button" class="btn outline">Open Mail Client</button>
+      </div>
+
+      <p id="formStatus" class="form-status" aria-live="polite"></p>
     </form>
+
+    <p class="note">If you don't have a Formspree endpoint yet, click "Open Mail Client" to send via your email app.</p>
   </section>
 
-  <!-- Footer -->
-  <footer>
-    <p>© 2025 Abdullah. All rights reserved.</p>
+  <footer class="footer">
+    <div class="container">© <span id="year"></span> Abdullah — Built with ❤️</div>
   </footer>
 
-  <!-- JS Libraries -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-  
-  <!-- Custom JS -->
-  <script src="script.js"></script>
-
+  <script src="script.js" defer></script>
 </body>
 </html>
